@@ -14,7 +14,7 @@ writestr=$2
 
 # Creates a new file with name and path writefile with content writestr, overwriting any existing 
 # file and creating the path if it doesn’t exist. Exits with value 1 and error print statement if 
-#the file could not be created.
+# the file could not be created.
 writefile_path=$(dirname "$writefile")
 if [ ! -d "$writefile_path" ]; then
   mkdir -p "$writefile_path"
